@@ -25,13 +25,17 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Weather-Station Weather-Station.c )
+add_executable(Weather-Station 
+        main.c
+        generalOps.c
+        LCDops.c
+)
 
 pico_set_program_name(Weather-Station "Weather-Station")
 pico_set_program_version(Weather-Station "0.1")
 
-pico_enable_stdio_uart(Weather-Station 1)
 pico_enable_stdio_usb(Weather-Station 1)
+pico_enable_stdio_uart(Weather-Station 0)
 
 # Add the standard library to the build
 target_link_libraries(Weather-Station
@@ -47,7 +51,7 @@ target_include_directories(Weather-Station PRIVATE
 target_link_libraries(Weather-Station 
         hardware_spi
         pico_cyw43_arch_none
-        )
+)
 
 pico_add_extra_outputs(Weather-Station)
 
