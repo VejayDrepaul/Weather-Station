@@ -3,7 +3,7 @@
 #include <string.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
-#include "LCDops.h"
+#include "include/LCDops.h"
 
 /*
 Copyright (c) 2021, zadi15 (https://github.com/zadi15/)

@@ -4,7 +4,7 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "pico/binary_info.h"
-#include "generalOps.h"
+#include "include/generalOps.h"
 
 /*
 Copyright (c) 2021, zadi15 (https://github.com/zadi15/)
