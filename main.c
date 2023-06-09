@@ -18,12 +18,9 @@
 int LCDpins[14] = {7, 6, 5, 4, 3, 2, 1, 0, 8, 10, 9, 16, 2};
 
 int main(void) {
-    bi_decl(bi_program_description("This is a work-in-progress example of interfacing with LCD Displays using HD44780 chips on the Raspberry Pi Pico!"));
-
+    bi_decl(bi_program_description("Weather Station using BMP280 sensor and HD44780 LCD"));
     stdio_init_all();
 
-    //Initialize all needed pins as defined in LCDpins, set them as
-    // outputs and then pull them low
     for(int gpio = 0; gpio < 11; gpio++){
         gpio_init(LCDpins[gpio]);
         gpio_set_dir(LCDpins[gpio], true);
