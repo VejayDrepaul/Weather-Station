@@ -3,8 +3,8 @@
 #include "pico/binary_info.h"
 #include "pico/cyw43_arch.h"
 #include "hardware/spi.h"
-#include "generalOps.h"
-#include "LCDops.h"
+#include "include/generalOps.h"
+#include "include/LCDops.h"
 
 // SPI Defines
 // We are going to use SPI 0, and allocate it to the following GPIO pins
