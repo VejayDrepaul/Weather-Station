@@ -35,7 +35,6 @@ pico_set_program_name(Weather-Station "Weather-Station")
 pico_set_program_version(Weather-Station "0.1")
 
 pico_enable_stdio_usb(Weather-Station 1)
-pico_enable_stdio_uart(Weather-Station 0)
 
 # Add the standard library to the build
 target_link_libraries(Weather-Station
